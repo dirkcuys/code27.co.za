@@ -1,0 +1,39 @@
+---
+layout: base
+title: Code 27
+services:
+- title: Technical Advisor
+  text: Navigating the technical landspace can be challenging. We can help you assess your tech assets and identify opportunities and risks in existing or new projects.
+- title: Research and Development
+  text: Dare to do something new! We can help you explore uncharted territory by building a proof of concept and engaging stakeholders to test what is possible. 
+- title: Minimum Viable Product
+  text: Take your ideas to market with a Minimum Viable Product (MVP). We can build a solid basis for you to start engaging clients and grow as you need.
+- title: Fractional CTO
+  text: Set your business on course to grow into a tech giant. We can help you build the needed technical capacity accompanied by the culture you need to innovate and the processes you need to succeed.
+---
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container">
+    <a class="navbar-brand" href="#">Code 27</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <img src="{{site.baseurl}}/assets/img/header.svg">
+  <h1 class="display-1 mx-lg-5">Make technology a core competency of your business</h1>
+</div>
+
+<div class="container">
+
+  <h2>Services</h2>
+
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+    {% for service in page.services %}
+      <div class="col">
+        <h4 class="card-title">{{service.title}}</h4>
+        <p class="card-text">{{service.text}}</p>
+      </div>
+    {% endfor %}
+  </div>
+
+</div>
