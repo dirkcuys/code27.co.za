@@ -15,30 +15,68 @@ services:
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container">
     <a class="navbar-brand" href="#">Code 27</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
   </div>
 </nav>
 
-<div class="hero">
-  <img src="{{site.baseurl}}/assets/img/header.svg">
-  <h1 class="display-1 mx-lg-5">Build tech that delight and empower humans</h1>
-</div>
-
-<div class="container">
-
-  <p>Technology has transformed the way we work, play and participate in the world around us. By establishing a technology competency you can leverage the opportunity to build digital products and services that empower your business and your clients.</p>
-  
-  <p>We help you build this technology competency by building your digital product while working together to establish the culture, team, process and infrastructure needed to carry on sustainably.</p>
-
-  <h2>Services</h2>
-  <div class="row row-cols-1 row-cols-md-2 g-4">
-    {% for service in page.services %}
-      <div class="col">
-        <h4 class="card-title">{{service.title}}</h4>
-        <p class="card-text">{{service.text}}</p>
-      </div>
-    {% endfor %}
+<header class="hero">
+  <!--img src="{{site.baseurl}}/assets/img/header.svg"-->
+  <div class="container">
+    <h1 class="display-1 m-0 py-5">Technology that delight and empower humans</h1>
   </div>
+</header>
 
-  <p class="mt-4">We enjoy working on problems that empowers people and improves the the communities and environments that surround us. Reach out at <a href="mailto:code27dev@gmail.com">code27dev@gmail.com</a>.</p>
+<section class="bg-light text-center py-5">
+  <div class="container">
+    <p>Technology has transformed the way we work, play and participate in the world around us. By establishing a technology competency you can leverage the opportunity to build digital products and services that empower your business and your clients.</p>
+    <p>We help you build this technology competency by building your digital product while working together to establish the culture, team, process and infrastructure needed to carry on sustainably.</p>
+  </div>
+</section>
 
-</div>
+<section id="services" class="py-5">
+  <div class="container">
+    <h2 class="display-5 mb-4">Services</h2>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      {% for service in page.services %}
+        <div class="col">
+          <h4 class="card-title">{{service.title}}</h4>
+          <p class="card-text">{{service.text}}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section id="about" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="display-5 mb-4">About</h2>
+    <p>We have more than 10 years experience helping clients and partners succesfully implement, expand and maintain their software products</p>
+
+    <p>We enjoy figuring out how new technologies can empower people and improve the the communities and environments that surround us.</p>
+
+    <p>Some past projects include work for the <a href="https://media.mit.edu">MIT media lab</a>, <a href="https://praekeltfoundation.org/">Praekelt Foundation</a>, <a href="https://fil.org">Filecoin Foundation</a> and <a href="https://wakoma.co/">Wakoma</a>.
+  </div>
+</section>
+
+<section id="contact" class="py-5">
+  <div class="container">
+    <h2 class="display-5 mb-4">Contact</h2>
+    <p>Send us and email at <a href="mailto:code27dev@gmail.com">code27dev@gmail.com</a> and tell us what you are looking for.</p>
+  </div>
+</section>
+
+
+<footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+        <p>&copy; 2025 Code 27. All Rights Reserved.</p>
+    </div>
+</footer>
