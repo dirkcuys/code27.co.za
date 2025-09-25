@@ -12,71 +12,256 @@ services:
   text: Be ready to take advantage of technology. We can help you build the needed technical capacity accompanied by the culture and processes you need to innovate.
 ---
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
   <div class="container">
-    <a class="navbar-brand" href="#">Code 27</a>
+    <a class="navbar-brand" href="#">Code27</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="#services">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
       </ul>
     </div>
   </div>
 </nav>
 
-<header class="hero">
-  <!--img src="{{site.baseurl}}/assets/img/header.svg"-->
+<!-- Hero Section -->
+<section class="hero-section">
   <div class="container">
-    <h1 class="display-1 m-0 py-5">Technology that delight and empower humans</h1>
-  </div>
-</header>
-
-<section class="bg-light text-center py-5">
-  <div class="container">
-    <p>Technology has transformed the way we work, play and participate in the world around us. By establishing a technology competency you can leverage the opportunity to build digital products and services that empower your business and your clients.</p>
-    <p>We help you build this technology competency by building your digital product while working together to establish the culture, team, process and infrastructure needed to carry on sustainably.</p>
+    <div class="row align-items-center">
+      <div class="col-lg-8 hero-content">
+        <h1 class="display-4 fw-bold mb-4">Building Technology Competency for Your Business</h1>
+        <p class="lead mb-4">We help you leverage technology to build digital products and services that empower your business and clients. From proof of concept to full-scale implementation, we're your trusted technology partner.</p>
+        <a href="#contact" class="btn btn-primary-custom btn-lg">Get Started</a>
+      </div>
+    </div>
   </div>
 </section>
 
-<section id="services" class="py-5">
+<!-- Services Section -->
+<section id="services" class="section-padding">
   <div class="container">
-    <h2 class="display-5 mb-4">Services</h2>
-    <div class="row row-cols-1 row-cols-md-2 g-4">
-      {% for service in page.services %}
-        <div class="col">
-          <h4 class="card-title">{{service.title}}</h4>
-          <p class="card-text">{{service.text}}</p>
+    <div class="text-center mb-5">
+      <h2 class="section-title">Our Services</h2>
+      <p class="section-subtitle">Comprehensive solutions to build your technology competency</p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="card service-card">
+          <div class="card-body text-center p-4">
+            <i class="fas fa-search service-icon"></i>
+            <h5 class="card-title">Technology Assessment</h5>
+            <p class="card-text">Navigate the technical landscape with confidence. We assess your tech assets and identify opportunities and risks in existing or new projects.</p>
+          </div>
         </div>
-      {% endfor %}
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card service-card">
+          <div class="card-body text-center p-4">
+            <i class="fas fa-lightbulb service-icon"></i>
+            <h5 class="card-title">Proof of Concept</h5>
+            <p class="card-text">Dare to do something new! We help you explore uncharted territory by building proof of concepts and engaging stakeholders to test what's possible.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card service-card">
+          <div class="card-body text-center p-4">
+            <i class="fas fa-rocket service-icon"></i>
+            <h5 class="card-title">MVP Development</h5>
+            <p class="card-text">Take your ideas to market with a Minimum Viable Product. We build a solid foundation to start engaging clients and grow as you need.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card service-card">
+          <div class="card-body text-center p-4">
+            <i class="fas fa-cogs service-icon"></i>
+            <h5 class="card-title">Technical Capacity Building</h5>
+            <p class="card-text">Be ready to take advantage of technology. We help you build technical capacity with the culture and processes needed to innovate.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card service-card">
+          <div class="card-body text-center p-4">
+            <i class="fas fa-code service-icon"></i>
+            <h5 class="card-title">Software Development</h5>
+            <p class="card-text">Full-scale software development services from conception to deployment, with ongoing maintenance and support.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card service-card">
+          <div class="card-body text-center p-4">
+            <i class="fas fa-users service-icon"></i>
+            <h5 class="card-title">Team & Culture</h5>
+            <p class="card-text">Establish the culture, team, and processes needed to carry on your technology initiatives sustainably.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<section id="about" class="py-5 bg-light">
+<!-- Stats Section -->
+<section class="stats-section section-padding">
   <div class="container">
-    <h2 class="display-5 mb-4">About</h2>
-    <p>We have more than 10 years experience helping clients and partners successfully implement, expand and maintain their software products</p>
-
-    <p>We enjoy figuring out how new technologies can empower people and improve the the communities and environments that surround us.</p>
-
-    <p>Some past projects include work for the <a href="https://media.mit.edu">MIT media lab</a>, <a href="https://praekeltfoundation.org/">Praekelt Foundation</a>, <a href="https://fil.org">Filecoin Foundation</a> and <a href="https://wakoma.co/">Wakoma</a>.
-  </div>
-</section>
-
-<section id="contact" class="py-5">
-  <div class="container">
-    <h2 class="display-5 mb-4">Contact</h2>
-    <p>Send us an email at <a href="mailto:code27dev@gmail.com">code27dev@gmail.com</a> and tell us what you are looking for.</p>
-  </div>
-</section>
-
-
-<footer class="bg-dark text-white text-center py-3">
-    <div class="container">
-        <p>&copy; 2025 Code 27. All Rights Reserved.</p>
+    <div class="row text-center">
+      <div class="col-md-4 mb-4">
+        <div class="stat-number">10+</div>
+        <h5>Years Experience</h5>
+        <p>Successfully helping clients implement and maintain software products</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="stat-number">20+</div>
+        <h5>Projects Delivered</h5>
+        <p>From proof of concepts to full-scale implementations</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="stat-number">100%</div>
+        <h5>Client Satisfaction</h5>
+        <p>Committed to delivering excellence in every project</p>
+      </div>
     </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about-section section-padding">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <h2 class="section-title">About Code27</h2>
+        <p class="lead">We enjoy figuring out how new technologies can empower people and improve the communities and environments that surround us.</p>
+        <p>With more than 10 years of experience, we help clients and partners successfully implement, expand and maintain their software products. Our approach focuses on building not just software, but the complete technology competency your organization needs.</p>
+
+        <h5 class="mt-4 mb-3">Our Notable Partnerships</h5>
+        <div class="row align-items-center">
+          <div class="col-6 col-md-3 mb-3">
+            <div class="text-center">
+              <i class="fas fa-university client-logo" style="font-size: 2rem;"></i>
+              <small class="d-block mt-1">MIT Media Lab</small>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 mb-3">
+            <div class="text-center">
+              <i class="fas fa-heart client-logo" style="font-size: 2rem;"></i>
+              <small class="d-block mt-1">Praekelt Foundation</small>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 mb-3">
+            <div class="text-center">
+              <i class="fas fa-database client-logo" style="font-size: 2rem;"></i>
+              <small class="d-block mt-1">Filecoin Foundation</small>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 mb-3">
+            <div class="text-center">
+              <i class="fas fa-wifi client-logo" style="font-size: 2rem;"></i>
+              <small class="d-block mt-1">Wakoma</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="text-center">
+          <i class="fas fa-laptop-code" style="font-size: 15rem; color: var(--secondary-color); opacity: 0.1;"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="section-padding" style="background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="contact-card">
+          <div class="text-center">
+            <h2 class="section-title">Let's Start a Conversation</h2>
+            <p class="section-subtitle">Ready to build your technology competency? Tell us about your project and let's explore how we can help.</p>
+
+            <div class="row justify-content-center">
+              <div class="col-md-8">
+                <div class="d-grid gap-3">
+                  <script src="/assets/js/contact-form.js"></script>
+                  <contact-form uuid="075711c3-5ae6-4095-a4f8-cef040571e28" source="landing-page"></contact-form>
+
+                  <a href="mailto:code27dev@gmail.com">
+                    <p class="text-muted mb-0">
+                    <i class="fas fa-envelope me-2"></i>
+                    code27dev@gmail.com
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h5 class="fw-bold">Code27</h5>
+        <p>Building technology competency for your business success.</p>
+      </div>
+      <div class="col-md-6 text-md-end">
+        <p class="mb-0">&copy; 2025 Code27. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
 </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+// Smooth scrolling for navigation links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      target.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  });
+});
+
+// Add scroll effect to navbar
+window.addEventListener('scroll', function() {
+  const navbar = document.querySelector('.navbar');
+  if (window.scrollY > 50) {
+    navbar.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+  } else {
+    navbar.style.boxShadow = '0 2px 4px rgba(0,0,0,0.05)';
+  }
+});
+</script>
+
